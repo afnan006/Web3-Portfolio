@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Testimonials from './components/Testimonials';
@@ -12,6 +13,7 @@ const HomePage = () => (
   <>
     <Hero />
     <Services />
+    <About/>
     <Portfolio />
     <Testimonials />
     <Contact />
@@ -25,6 +27,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />

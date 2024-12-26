@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="text-2xl font-display font-bold">
             <span className="bg-gradient-to-r from-gold-400 to-gold-600 text-transparent bg-clip-text">
-              Elite Web3
+              Arshad Web3
             </span>
           </Link>
 
