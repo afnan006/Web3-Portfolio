@@ -1,4 +1,4 @@
-# Elite Web3 Portfolio
+# Web3 Portfolio
 
 A modern Web3-focused portfolio website built with React, TypeScript, and Tailwind CSS.
 
