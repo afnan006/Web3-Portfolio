@@ -675,6 +675,11 @@ const Contact = () => {
           </motion.div>
         </div>
       </div>
+      <div className="py-8 border-t border-primary-600/20 text-center">
+           <p className="text-gray-300">
+             &copy; {new Date().getFullYear()} Elite Web3. All rights reserved.
+           </p>
+         </div>
     </section>
   );
 };

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +15,11 @@ const Navbar = () => {
   }, []);
 
   const links = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Home', path: '#home' },
+    { name: 'About', path: '#about' },
+    { name: 'Services', path: '#services' },
+    // { name: 'Portfolio', path: '#portfolio' },
+    { name: 'Contact', path: '#contact' },
   ];
 
   return (
@@ -29,30 +28,23 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="text-2xl font-display font-bold">
+          <a href="#home" className="text-2xl font-display font-bold">
             <span className="bg-gradient-to-r from-gold-400 to-gold-600 text-transparent bg-clip-text">
               Arshad Web3
             </span>
-          </Link>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {links.map((link) => (
-              <Link
+              <a
                 key={link.name}
-                to={link.path}
+                href={link.path}
                 className="text-gray-300 hover:text-gold-400 transition-colors duration-300 font-medium"
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-4 py-2 bg-gradient-to-r from-gold-400 to-gold-600 text-dark-900 rounded-lg font-bold hover:shadow-lg hover:shadow-gold-400/20 transition-all duration-300"
-            >
-              Connect Wallet
-            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,14 +67,14 @@ const Navbar = () => {
             >
               <div className="px-4 py-6 space-y-4">
                 {links.map((link) => (
-                  <Link
+                  <a
                     key={link.name}
-                    to={link.path}
+                    href={link.path}
                     className="block text-gray-300 hover:text-gold-400 transition-colors duration-300 py-2"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 ))}
                 <motion.button
                   whileHover={{ scale: 1.05 }}
