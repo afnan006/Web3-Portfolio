@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <a href="#home" className="text-2xl font-display font-bold">
             <span className="bg-gradient-to-r from-gold-400 to-gold-600 text-transparent bg-clip-text">
-              Arshad Web3
+              Web3 Solutions
             </span>
           </a>
 

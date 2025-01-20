@@ -98,7 +98,7 @@
 // // // // //                   </div>
 // // // // //                   <div>
 // // // // //                     <p className="font-medium">Email Us</p>
-// // // // //                     <p className="text-sm">arshadweb3@gmail.com</p>
+// // // // //                     <p className="text-sm">web3@gmail.com</p>
 // // // // //                   </div>
 // // // // //                 </a>
 // // // // //                 <a
